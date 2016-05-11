@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/be_showing_item_poster"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/be_showing_item_poster"
+            android:layout_marginLeft="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/be_showing_item_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="疯狂动物城"
+                android:textSize="@dimen/text_large" />
+
+            <TextView
+                android:id="@+id/be_showing_item_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/be_showing_item_movie_name"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="导演：尼古拉斯 赵四" />
+
+            <TextView
+                android:id="@+id/be_showing_item_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/be_showing_item_director"
+                android:layout_marginTop="@dimen/dp_10"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="类型：喜剧，爱情，动画" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/be_showing_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_large"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="9.9" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+    
+
